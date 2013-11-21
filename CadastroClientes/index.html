@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			table.table#tbl > tbody > tr > td {
+				font-weight: bold;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<div class="page-header">
+						<h1>
+							Locadora do Nelson <small>Cadastro de Clientes</small>
+						</h1>
+					</div>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#panel-01" data-toggle="tab">Informações Pessoais</a>
+							</li>
+							<li>
+								<a href="#panel-02" data-toggle="tab">Formas de Contato</a>
+							</li>
+							<li>
+								<a href="#panel-03" data-toggle="tab">Endereço de Cobrança</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="panel-01">
+								<table class="table" id="tbl">
+									<tr><td colspan="6"></td></tr>
+									<tr>
+										<td class="text-right">Nome</td>
+										<td colspan="5"><input type="text" class="form-control" placeholder="Nome Completo"></td>
+									</tr>
+									<tr>
+										<td class="text-right">Data de Nascimento</td>
+										<td><input type="DATE" class="form-control" placeholder="00/00/0000"></td>
+										<td class="text-right">Sexo</td>
+										<td><select class="form-control"><option>Masculino</option><option>Feminino</option></select></td>
+										<td class="text-right">Estado Civil</td>
+										<td><select class="form-control"><option>Solteiro</option><option>Casado</option><option>Divorciado</option><option>Separado</option><option>Divorciado</option></select></td>
+									</tr>
+									<tr>										
+										<td class="text-right">CPF</td>
+										<td><input type="text" class="form-control" placeholder="0000000-0"></td>
+										<td class="text-right">RG</td>
+										<td colspan="3"><input type="text" class="form-control" placeholder="000.000.000-00"></td>
+									</tr>
+								</table>
+								<br>
+								<hr>
+								<div class="text-right">
+									<a href="#panel-02" class="btn btn-primary">Próximo&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+							</div>
+							<div class="tab-pane" id="panel-02">
+								<table class="table" id="tbl">
+									<tr><td colspan="6"></td></tr>
+									<tr>
+										<td class="text-right">Email</td>
+										<td><div class="input-group"><span class="input-group-btn" style="width:15%;"><select class="form-control"><option>Residencial</option><option>Particular</option><option>Corporativo</option></select></span><input type="text" class="form-control"><span class="input-group-btn"><button class="btn btn-success" type="button"><span class="glyphicon glyphicon-plus"></span></button></span></div></td>
+									</tr>
+									<tr>
+										<td class="text-right">Telefone</td>
+										<td><div class="input-group"><span class="input-group-btn" style="width:15%;"><select class="form-control"><option>Residencial</option><option>Particular</option><option>Corporativo</option></select></span><input type="text" class="form-control"><span class="input-group-btn"><button class="btn btn-success" type="button"><span class="glyphicon glyphicon-plus"></span></button></span></div></td>
+									</tr>
+									<tr>
+										<td colspan="2"></td>
+									</tr>
+								</table>
+
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th colspan="4">Contato Adicionados</th>
+										</tr>
+										<tr>
+											<th width="10%">Tipo</th>
+											<th width="10%">Local</th>
+											<th>Contato</th>
+											<th width="15%" class="text-center">Ação</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Email</td>
+											<td>Particular</td>
+											<td>gpedro831@gmail.com</td>
+											<td class="text-center"><button type="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>&nbsp;<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button></td>
+										</tr>
+										<tr>
+											<td>Telefone</td>
+											<td>Particular</td>
+											<td>(65) 9943-4667</td>
+											<td class="text-center"><button type="button" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span></button>&nbsp;<button type="button" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button></td>
+										</tr>
+									</tbody>
+								</table>
+								<br>
+								<hr>
+								<div class="text-right">
+									<a href="#panel-03" class="btn btn-primary">Próximo&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+							</div>
+							<div class="tab-pane" id="panel-03">
+								<table class="table" id="tbl">
+									<tr><td colspan="6"></td></tr>
+									<tr>
+										<td class="text-right">CEP</td>
+										<td width="20%"><div class="input-group"><input type="text" class="form-control"><span class="input-group-btn"><button class="btn btn-info" type="button"><span class="glyphicon glyphicon-search"></span></button></span></div></td>
+										<td class="text-right">Localidade</td>
+										<td colspan="3"><input type="text" class="form-control"></td>
+									</tr>
+									<tr>										
+										<td class="text-right">Endereço</td>
+										<td colspan="5"><input type="text" class="form-control"></td>
+									</tr>
+									<tr>
+										<td class="text-right">Bairro</td>
+										<td><input type="text" class="form-control"></td>
+										<td class="text-right">Numero</td>
+										<td><input type="number" class="form-control"></td>
+										<td class="text-right">Complemento</td>
+										<td><input type="text" class="form-control"></td>
+									</tr>
+								</table>
+								<br>
+								<hr>
+								<div class="text-right">
+									<a href="#panel-01" class="btn btn-primary">Próximo&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.js"></script>
+
+	</body>
+</html>
